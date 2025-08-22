@@ -13,12 +13,23 @@ const age = 2022 - user_birthyear
 const utskrift = "Hei " + user_name + " (" + age + ")";
 //...og skriver den ut til elementet med id melding
 document.getElementById("melding").innerHTML = utskrift;
-
 </script>
 
 
+<p id="alder"></p>
+<script>
+const far = 37
+const mor = 36
+const datter = 7
+const sønn = 2
+
+const familie = far + mor + datter + sønn
+const averageFamilie = familie / 4
+
+document.getElementById("alder").innerHTML = "Gjennomsnittsalderen i familien er " + averageFamilie + " år."
 
 
+</script>
 
 
 
