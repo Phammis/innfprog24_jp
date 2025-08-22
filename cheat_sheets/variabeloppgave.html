@@ -27,12 +27,20 @@ const familie = far + mor + datter + sønn
 const averageFamilie = familie / 4
 
 document.getElementById("alder").innerHTML = "Gjennomsnittsalderen i familien er " + averageFamilie + " år."
-
-
 </script>
 
+<p id="navn"></p>
+<p id="epost"></p>
 
+<script>
 
+const navn = "Johnny"
+const epost = "jdpham@hiof.no"
 
+const epostLink = "<a href='mailto:" + epost + "'>Send mail til " + navn + "</a>"
 
+document.getElementById("epost").innerHTML = epostLink
+document.getElementById("navn").innerHTML = navn
+
+</script>
 </body>
