@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="antallDyr"></p>
+    <script>
+        const dyr = ["Katt", "Hund", "Skilpadde", "Hest", "Kanin", "Pinnsvin", "Påfugl", "Blåhval", "Slange", "Frosk", "Pikachu"]
+
+        // .push legger til elementer på slutten av arrayet
+        // .sort sorterer arrayet alfabetisk
+
+        dyr.push("Rotte", "Ekorn")
+        dyr.sort()
+
+        const antallDyr = `Det er ${dyr.length} dyr i denne listen. ${dyr.join(", ")}`;
+
+        console.log(dyr)
+        console.log(dyr.length)
+
+        document.getElementById("antallDyr").innerHTML = `Antall dyr i arrayet er ${antallDyr}`
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="Events"></ul>
+    <script>
+
+        const years = [1966, 1564, 1455, 1346, 1215]
+
+        years.sort(function(a, b){return a - b})
+
+
+        let eventsHTML = years.map(y => {
+            eventsHTML +=`
+            <li>${y}</li>
+            `
+
+        })
+
+        document.getElementById("Events").innerHTML = eventsHTML
+
+
+        console.log(years)
+
+
+    </script>
+</body>
+</html>
